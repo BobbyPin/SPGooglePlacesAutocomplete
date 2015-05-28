@@ -87,7 +87,12 @@
     self.resultBlock = block;
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[self googleURLString]]];
-    googleConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    googleConnection =
+              [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:NO];
+
+    [googleConnection scheduleInRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    [googleConnection start];
+
     responseData = [[NSMutableData alloc] init];
 }
 
@@ -154,3 +159,4 @@
 }
 
 @end
+
