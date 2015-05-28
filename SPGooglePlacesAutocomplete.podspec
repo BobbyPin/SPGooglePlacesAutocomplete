@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SPGooglePlacesAutocomplete"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "An objective-c wrapper around the Google Places autocomplete API. Includes sample application emulating the Maps app."
   s.description  = <<-DESC
                    SPGooglePlacesAutocomplete is a simple objective-c wrapper around the Google Places Autocomplete API.
@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
                    SPGooglePlacesAutocomplete also provides support for converting Place results into CLPlacemark objects for easy mapping with MKMapView.
                    A longer description of dumy in Markdown format.
                    DESC
-  s.homepage     = "https://github.com/chenyuan/SPGooglePlacesAutocomplete"
+  s.homepage     = "https://github.com/Bobbypin/SPGooglePlacesAutocomplete"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.authors      = { "Matej Bukovinski" => "matej@bukovinski.com", "Chris Chen" => "chrischen79@gmail.com" }
+  s.authors      = { "Matej Bukovinski" => "matej@bukovinski.com", "Chris Chen" => "chrischen79@gmail.com" , "Bobbypin" => "erik@bobbypin.co"}
 
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/chenyuan/SPGooglePlacesAutocomplete.git", :tag => '1.0.4'}
+  s.source       = { :git => "https://github.com/Bobbypin/SPGooglePlacesAutocomplete.git", :tag => '1.0.5'}
   s.source_files  = 'SPGooglePlacesAutocomplete/*.{h,m}'
   s.frameworks = 'CoreLocation'
   s.requires_arc = true
